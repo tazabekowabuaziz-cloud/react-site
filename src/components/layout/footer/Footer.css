@@ -1,0 +1,140 @@
+
+.footer {
+  width: 100%;
+  background-color: #032541;
+  color: #ffffff;
+  padding: 38px 20px;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.footer-logo {
+  color: #01b4e4;
+  font-size: 38px;
+  font-weight: 900;
+  line-height: 1.05;
+  letter-spacing: 3px;
+  flex-shrink: 0;
+  min-width: 190px;
+}
+
+.logo-line {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.logo-pill {
+  display: inline-block;
+  width: 52px;
+  height: 24px;
+  background: #01b4e4;
+  border-radius: 20px;
+}
+
+.logo-circle {
+  display: inline-block;
+  width: 29px;
+  height: 29px;
+  background: #70d1bc;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+
+.logo-bottom {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.logo-gradient {
+  display: inline-block;
+  width: 80px;
+  height: 27px;
+  border-radius: 20px;
+  background: linear-gradient(90deg, #80d5b2, #01b4e4);
+}
+
+.footer-column {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.footer-column h3 {
+  color: #ffffff;
+  font-size: 17px;
+  font-weight: 700;
+  margin: 0 0 7px;
+  white-space: nowrap;
+}
+
+.footer-column a {
+  color: #d7e0e8;
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 1.4;
+  white-space: nowrap;
+  transition: color 0.2s ease;
+}
+
+.footer-column a:hover {
+  color: #01b4e4;
+}
+
+/* Адаптация для планшетов */
+@media (max-width: 900px) {
+  .footer-container {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 35px 25px;
+  }
+
+  .footer-logo {
+    width: 100%;
+    text-align: center;
+  }
+
+  .logo-line,
+  .logo-bottom {
+    justify-content: center;
+  }
+}
+
+/* Адаптация для телефонов */
+@media (max-width: 500px) {
+  .footer {
+    padding: 30px 20px;
+  }
+
+  .footer-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px 15px;
+  }
+
+  .footer-logo {
+    grid-column: 1 / -1;
+    font-size: 32px;
+    min-width: 0;
+  }
+
+  .footer-column h3 {
+    font-size: 15px;
+    white-space: normal;
+  }
+
+  .footer-column a {
+    font-size: 11px;
+    white-space: normal;
+  }
+}

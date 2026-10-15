@@ -1,0 +1,25 @@
+.topRatedCard button{
+    width: 100px;
+    height: 20px;
+    color: black;
+    background-color: aqua;
+    border: none;
+    border-radius: 10px;
+}
+.topRatedCard{
+    padding: 20px;
+
+}
+.topRatedCard img{
+    border-radius: 20px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0,0.7);
+
+
+}
+
+.topRatedCard img:hover{
+    transition: 1s;
+    transform: scale(1.05);
+    box-shadow: 10px 10px 20px rgba(0, 0, 0,0.7);
+
+}

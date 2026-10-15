@@ -1,0 +1,33 @@
+.popularCard{
+                width: 200px;
+      img{
+        border-radius: 5px;
+box-shadow: 10px 10px 20px rgba(0, 0, 0,0.7);
+    }
+}
+.popularCard{
+    h1{
+    color: rgb(33, 184, 219);
+    font-size: 18px;
+    font-weight: 700;
+    }
+    p{
+    color: #536063;
+    font-size: 16px;
+    font-weight: 700;
+    }
+}
+
+.popular{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 60px;
+}
+.popularCard img:hover{
+    transition: 1s;
+    transform: scale(1.05);
+    box-shadow: 10px 10px 20px rgba(0, 0, 0,0.7);
+
+}

@@ -1,0 +1,132 @@
+#header{
+    background-color: rgb(4, 34, 58);
+    height: 100px;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+.left{
+    display: flex;
+    align-items: center;
+    gap: 50px; 
+   
+}
+.right  {
+    display: flex;
+    gap: 30px;
+    input{
+        outline: none;
+    }
+}
+.left a{
+    position:relative;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 10px;
+    transition: color 0.3s ease;
+
+}
+.left a:hover{
+    color: #00e5e5;
+}
+.left a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 4px;
+    background: #00e5e5;
+    border-radius: 5px;
+    transition: width 0.3s ease;
+}
+.left a:hover::after{
+    width: 100%;
+}
+
+
+
+
+
+.right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Поле поиска */
+
+.right input {
+  width: 200px;
+  padding: 10px 20px;
+  background: transparent;
+  border: 2px solid #294b6b;
+  border-radius: 30px;
+  outline: none;
+  color: white;
+  font-size: 18px;
+  transition: all 0.3s ease;
+}
+
+.right input::placeholder {
+  color: #b8c7d8;
+}
+
+/* Голубая рамка при нажатии */
+.right input:focus {
+  border-color: #00e5e5;
+  box-shadow: 0 0 10px #00e5e544;
+}
+
+/* Иконка поиска */
+.right svg {
+  color: white;
+  font-size: 28px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.right svg:hover {
+  color: #00e5e5;
+}
+
+.right {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.right input {
+  width: 200px;
+  padding: 15px 55px 15px 20px;
+  background: transparent;
+  border: 2px solid #294b6b;
+  border-radius: 30px;
+  outline: none;
+  color: white;
+  font-size: 18px;
+}
+
+.right a {
+  position: absolute;
+  right: 15px;
+  color: white;
+  cursor: pointer;
+  font-size: 30px;
+}
+
+.right input::placeholder {
+  color: #b8c7d8;
+}
+
+.right input:focus {
+  border-color: #00e5e5;
+  box-shadow: 0 0 10px #00e5e544;
+}
